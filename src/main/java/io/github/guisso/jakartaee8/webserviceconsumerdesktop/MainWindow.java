@@ -117,6 +117,8 @@ public class MainWindow extends javax.swing.JFrame {
             String json = buffer.lines()
                     .collect(Collectors.joining());
 
+            // Biblioteca do Google para manipulação
+            // de strings JSON
             Gson gson = new Gson();
             Endereco e = gson.fromJson(
                     json, Endereco.class);
